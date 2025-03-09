@@ -1,0 +1,84 @@
+.bg-image
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  background-position:top; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-overlay
+{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-image-data
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:300px;
+  background-position:top; 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.heading
+{
+font-size: 50px;
+color:#ffff;
+font-weight: 700;
+font-family: 'Noto Serif', serif;
+}
+.weatherHeading
+{
+  font-size: 50px;
+  color:#ffff;
+  font-weight: 700;
+  font-family: 'Noto Serif', serif; 
+}
+
+.time
+{
+  font-family: 'Noto Serif', serif;  
+}
+.searchBar
+{
+  width:100%;
+  height:50px;
+}
+.searchBtn
+{
+  width: 100%;
+  height:50px;
+  background-color:#fcb900;
+  border-color: #fcb900;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+    line-height:10px;
+  }
+  .weatherHeading
+  {
+    font-size: 25px;
+    line-height:40px;
+  }
+  .searchBar
+  {
+    height: 40px;
+    width:100%;
+  }
+  .searchBtn
+  {
+    height: 40px;
+    width:100%;
+  }
+  .axis
+  {
+    overflow-x: hidden;
+  }
+}
