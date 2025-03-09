@@ -65,12 +65,12 @@ function Data() {
 
         const fetchWeatherImage = async (description) => {
             try {
-                const response = await fetch(`https://api.unsplash.com/search/photos?query=${description}&client_id=YOUR_UNSPLASH_ACCESS_KEY`);
+                const response = await fetch(`https://api.unsplash.com/search/photos?query=${description}&client_id=klUbFbNUk8nOjVjK8xn_2iF2DTrU0wBos2GJ95tNaj4`);
                 const data = await response.json();
                 if (data.results.length > 0) {
-                    setImageUrl(data.results[0].urls.regular); // Set the image URL
+                    setImageUrl(data.results[0].urls.regular);
                 } else {
-                    setImageUrl('default_image_url_here'); // Fallback image if no result found
+                    setImageUrl('default_image_url_here');
                 }
             } catch (error) {
                 console.error("Error fetching image from Unsplash", error);
